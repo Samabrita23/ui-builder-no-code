@@ -1,0 +1,14 @@
+
+.sidebar {
+  position: relative;
+  padding: 2rem;
+  width: 10rem;
+  border-right: 1px solid #ccc;  
+  justify-content: center;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
