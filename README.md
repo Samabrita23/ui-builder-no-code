@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+## UI Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple UI builder tool built using React, allowing users to create and customize UI elements visually. It utilizes the React Draggable library for element manipulation.
 
-## Available Scripts
+#Getting Started
+Follow these steps to set up and run the UI builder project:
 
-In the project directory, you can run:
+#Prerequisites
+Ensure you have Node.js and npm installed on your machine.
 
-### `npm start`
+#Installation
+1. Clone the repository to your local machine.
+git clone https://github.com/your-username/ui-builder.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Navigate to the project directory.
+ cd ui-builder
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. Install dependencies.
+npm install
 
-### `npm test`
+6. Running the Application
+Start the development server.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm start
 
-### `npm run build`
+7. Open your browser and navigate to http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   
+Using the UI Builder
+Adding Elements:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+On the left sidebar, click the "Add Label," "Add Button," or "Add Hyperlink" buttons to add elements to the canvas.
+Editing Element Properties:
+Click on an element in the canvas to select it.
+The selected element's properties will appear in the draggable Property Editor on the top.
+Adjust the "Margin Top" and "Font Size" properties as needed.
+Saving Changes:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Click the "Save" button on the top-right to generate HTML, CSS, and JS code based on the current canvas state.
+Generated Code:
 
-### `npm run eject`
+The generated code will be displayed in the "Generated Code" section on the right.
+Copy the code for integration into your project.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#Libraries Used
+React: JavaScript library for building user interfaces.
+React Draggable: Draggable component for React.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Project Structure
+src/components: Contains React components (Sidebar, Canvas, PropertyEditor).
+src/styles: Stylesheets for components.
+src/App.js: Main application file.
+public/index.html: HTML template.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#Customization
+Feel free to customize the UI Builder to suit your needs. You can add more elements, enhance styling, or extend functionality based on your project requirements.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
