@@ -2,15 +2,15 @@
 
 This project is a simple UI builder tool built using React, allowing users to create and customize UI elements visually. It utilizes the React Draggable library for element manipulation.
 
-#Getting Started
+# Getting Started
 Follow these steps to set up and run the UI builder project:
 
-#Prerequisites
+# Prerequisites
 Ensure you have Node.js and npm installed on your machine.
 
-#Installation
+# Installation
 1. Clone the repository to your local machine.
-git clone https://github.com/your-username/ui-builder.git
+git clone https://github.com/Samabrita23/ui-builder-no-code.git
 
 3. Navigate to the project directory.
  cd ui-builder
@@ -42,16 +42,16 @@ Generated Code:
 The generated code will be displayed in the "Generated Code" section on the right.
 Copy the code for integration into your project.
 
-#Libraries Used
+# Libraries Used
 React: JavaScript library for building user interfaces.
 React Draggable: Draggable component for React.
 
-Project Structure
+# Project Structure
 src/components: Contains React components (Sidebar, Canvas, PropertyEditor).
 src/styles: Stylesheets for components.
 src/App.js: Main application file.
 public/index.html: HTML template.
 
-#Customization
+# Customization
 Feel free to customize the UI Builder to suit your needs. You can add more elements, enhance styling, or extend functionality based on your project requirements.
 
