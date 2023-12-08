@@ -1,8 +1,84 @@
+/* App.css */
+
 .App {
-  padding: 4rem;
+  overflow-x: hidden;
+  margin: 0;
 }
 
-.ui-builder{
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 1px solid #d5d9d9;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+}
+
+.ui-builder {
+  padding-top: 1rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-between; /* Align items horizontally with space in between */
+}
+
+.generated-code{
+  position: relative;
+  padding: 2rem;
+  width: auto;
+  border-left: 1px solid #ccc;  
+  justify-content: center;
+  overflow-x: scroll;
+}
+ 
+.save-button{
+  margin-top: 1rem;
+ margin-left: 70rem;
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.save-button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.save-button:hover {
+  background-color: #2c974b;
+}
+
+.save-button:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.save-button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.save-button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }

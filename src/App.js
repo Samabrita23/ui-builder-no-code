@@ -54,17 +54,19 @@ function App() {
     `;
 
     setGeneratedCode(code);
+    setSelectedElement(null); // Close the property editor after generating code
   };
 
   return (
     <div className="App">
+      <div className='heading'>UI BUILDER</div>
+      <button className='save-button' onClick={generateCode}>Save</button>
       <div className="ui-builder">
         <Sidebar addElement={addElement} />
-        <Canvas elements={elements} updateElement={updateElement} />
-        <PropertyEditor selectedElement={selectedElement} updateElement={updateElement} />
-        <button onClick={generateCode}>Save</button>
+        <Canvas elements={elements} updateElement={updateElement} setSelectedElement={setSelectedElement} />
+        {selectedElement && <PropertyEditor selectedElement={selectedElement} updateElement={updateElement} />}
         <div className="generated-code">
-          <h2>Generated Code</h2>
+          <h3>Generated Code</h3>
           <pre>{generatedCode}</pre>
         </div>
       </div>
